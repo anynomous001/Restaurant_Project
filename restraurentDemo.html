@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Smythe google  font  Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+
+    <title>My App</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="container">
+            <h1>Jimmies diner</h1>
+            <h4>The best burger and pizza in town</h4>
+        </div>
+    </header>
+    <main>
+        <div id="first-container">
+            <div id="item" class="item_1">
+
+                <div id="menu-inner-div">
+
+                    <div id="menu-items">🍔</div>
+                    <div>
+                        <h1 id="food-name">HumBergur</h1>
+                        <p id="food-ingredients">beef, cheese, lettuce</p>
+                        <h3 id="food-price">$12</h3>
+                    </div>
+                </div>
+
+                <div id="btn-container">
+                    <button id="plus-btn">+</button>
+                    <button id="minus-btn">-</button>
+                </div>
+            </div>
+            <div id="item" class="item_2">
+
+                <div id="menu-inner-div">
+
+                    <div id="menu-items">🍺</div>
+                    <div>
+                        <h1 id="food-name">Beer</h1>
+                        <p id="food-ingredients">grain, hops, yeast, water</p>
+                        <h3 id="food-price">$12</h3>
+                    </div>
+                </div>
+
+                <div id="btn-container">
+                    <button id="plus-btn">+</button>
+                    <button id="minus-btn">-</button>
+                </div>
+            </div>
+            <div id="item" class="item_3">
+
+                <div id="menu-inner-div">
+
+                    <div id="menu-items">🍕</div>
+                    <div>
+                        <h1 id="food-name">Pizza</h1>
+                        <p id="food-ingredients">pepperoni,mushrom,mozarella</p>
+                        <h3 id="food-price"></h3>
+                    </div>
+                </div>
+
+
+                <div id="btn-container">
+                    <button id="plus-btn">+</button>
+                    <button id="minus-btn">-</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="total-div" class="hidden">
+
+            <h1 id="your-order">Your Order</h1>
+
+            <div id="order-container">
+
+                <div id="order-details">
+                    <div>
+                        <h1 id="ordered-item">item name</h1>
+                        <h1 id="ordered-item">item name</h1>
+                        <h1 id="ordered-item">item name</h1>
+                    </div>
+                    <div id="remove-btn-div">
+                        <button class="remove-btn">Remove</button>
+                        <button class="remove-btn">Remove</button>
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                </div>
+                <div id="price-div">
+                    <h3 id="price-tag">$12</h3>
+                    <h3 id="price-tag">$12</h3>
+                    <h3 id="price-tag">$12</h3>
+                </div>
+
+            </div>
+            <div id="total-price">
+                <h2 class="price">Total Price :</h2>
+                <h3 id="price">$00</h3>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+html,
+body {
+    margin: 0;
+    border: 0;
+
+
+}
+
+/*Header section*/
+
+#container {
+    margin: 40px auto 0 auto;
+    background: url(./images/burger.jpg);
+    Width: 700px;
+    Height: 200px;
+    background-size: cover;
+    background-position-y: 80%;
+
+    padding-top: 60px;
+}
+
+h1,
+h4 {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Smythe', cursive;
+    /*not working*/
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+/* items */
+
+main {
+    background-color: #dee2e6;
+    margin: 0 auto 20px auto;
+    Width: 700px;
+    height: 1000px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+#item {
+    Width: 550px;
+    Height: 200px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    border-bottom: 1px solid rgba(206, 212, 218, 0.6);
+    border-radius: 60px;
+}
+
+/*menu inner*/
+
+
+
+#menu-items {
+    font-size: 80px;
+}
+
+#plus-btn,
+#minus-btn {
+    background-color: rgba(206, 212, 218, 0.3);
+    /* Set the background color */
+    border: 1px solid rgba(128, 128, 128, 0.6);
+    /* Remove the border */
+    color: #495057;
+    /* Set the font color */
+    padding: 2px 18px;
+    /* Set the padding */
+    text-align: center;
+    /* Center the text */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Display the button as an inline element */
+    font-size: 40px;
+    /* Set the font size */
+    margin: 5px;
+    /* Add some margin */
+    cursor: pointer;
+    /* Change the cursor to a pointer */
+    border-radius: 50%;
+    /* Set the border radius to 50% */
+}
+
+/* menu inner div*/
+#food-name {
+    font-size: 30px;
+}
+
+#food-price {
+    font-size: 25px;
+}
+
+#food-name,
+#food-price {
+    color: rgba(73, 80, 87);
+    padding: 0;
+
+}
+
+#food-ingredients {
+    color: rgba(73, 80, 87, 0.5);
+}
+
+#menu-inner-div {
+    margin-top: 40px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 15px;
+
+}
+
+#btn-container {
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+/*Total div*/
+#total-div {
+    Width: 550px;
+    Height: 300px;
+    background-color: #ffffff;
+    margin: auto auto 40px auto;
+    color: black;
+}
+
+#your-order {
+    font-family: 'Smythe', cursive;
+    color: rgba(73, 80, 87);
+    padding: 0;
+    text-align: center;
+}
+
+.remove-btn {
+    background-color: transparent;
+    border: none;
+    color: rgba(73, 80, 87, 0.5);
+    font-size: 16px;
+    padding: 10px 20px;
+    display: block;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+#ordered-item {
+    font-family: 'Smythe', cursive;
+    color: rgba(73, 80, 87);
+    padding: 0;
+}
+
+#order-details {
+    display: flex;
+    padding-left: 20px;
+}
+
+#remove-btn-div {
+    padding-top: 10px;
+}
+
+#order-container {
+    display: flex;
+    border-bottom: 1px solid rgba(206, 212, 218, 0.6);
+}
+
+#price-div {
+    margin: auto 20px auto auto;
+}
+
+#price-tag {
+    font-size: 24px;
+}
+
+#total-price {
+
+    color: rgba(73, 80, 87);
+    font-family: 'Smythe', cursive;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 30px;
+
+}
+
+.price {
+    margin: 5px 0 0 25px;
+}
+
+#price {
+    margin: 15px 15px 0 0;
+}
+
+/*.hidden {
+    display: none;
+}
+
+.active {
+    display: inline-block;
+}
