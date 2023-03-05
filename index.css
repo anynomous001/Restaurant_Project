@@ -45,12 +45,12 @@ main {
     background-color: #dee2e6;
     margin: 0 auto 20px auto;
     Width: 700px;
-    height: 1000px;
+    height: 1200px;
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-
+    position: relative;
 }
 
 #item {
@@ -143,6 +143,7 @@ main {
     background-color: #ffffff;
     margin: auto auto 40px auto;
     color: black;
+
 }
 
 #your-order {
@@ -171,7 +172,14 @@ main {
 
 #order-details {
     display: flex;
+    justify-content: flex-start;
     padding-left: 20px;
+
+}
+
+#order-details h1,
+h3 {
+    font-size: 40px;
 }
 
 #remove-btn-div {
@@ -180,25 +188,32 @@ main {
 
 #order-container {
     display: flex;
+    flex-direction: column;
+
     border-bottom: 1px solid rgba(206, 212, 218, 0.6);
 }
 
 #price-div {
     margin: auto 20px auto auto;
+
 }
 
 #price-tag {
     font-size: 24px;
 }
 
-#total-price {
+#total-price h1,
+h3 {
+    padding: 0;
+    margin: 2px;
+}
 
+#total-price {
     color: rgba(73, 80, 87);
     font-family: 'Smythe', cursive;
     display: flex;
     justify-content: space-between;
-
-    font-size: 30px;
+    font-size: 25px;
 
 }
 
@@ -210,10 +225,105 @@ main {
     margin: 15px 15px 0 0;
 }
 
-/*.hidden {
+.hidden {
     display: none;
 }
 
 .active {
-    display: inline-block;
+    display: block;
+}
+
+
+/*complete order button*/
+#complete-btn-div {
+    margin: 0 auto;
+    padding-bottom: 100px;
+
+}
+
+#complete-btn {
+    width: 550px;
+    align-self: center;
+    background-color: lightgreen;
+    height: 70px;
+    font-family: 'Smythe', cursive;
+    color: rgba(73, 80, 87);
+    font-size: 45px;
+    border: none;
+
+}
+
+/*payment portal div*/
+
+#payment-portal-div {
+
+    height: 400px;
+    width: 480px;
+    background-color: black;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10%;
+    background-color: #cad2c5;
+}
+
+#payment-portal-div h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+
+
+}
+
+#payment-portal-div input {
+    width: 350px;
+    height: 50px;
+    text-align: left;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 5px
+}
+
+#payment-portal-div input:last-child {
+    margin: 0 0 30px 0;
+}
+
+#pay-btn {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    background-color: rgba(206, 212, 218, 0.3);
+    /* Set the background color */
+    border: 1px solid rgba(128, 128, 128, 0.6);
+
+}
+
+/*Message Div*/
+#message-div {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding: 20px;
+    line-height: 60px;
+}
+
+span {
+    color: red;
 }

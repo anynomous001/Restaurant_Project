@@ -8,7 +8,10 @@
     <!-- Css Link -->
     <link rel="stylesheet" href="index.css">
     <!-- Smythe google  font  Link -->
+
     <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <!-- Roboto google  font  Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
 
     <title>My App</title>
 </head>
@@ -24,16 +27,36 @@
     <main>
         <div id="first-container"> </div>
 
-        <div id="total-div" class="hidden">
-            <h1 id="your-order">Your Order</h1>
-            <div id="order-container"></div>
 
+        <div id="total-div" class="hidden">
+
+            <h1 id="your-order">Your Order</h1>
+
+            <div id="order-container"></div>
 
             <div id="total-price">
                 <h2 class="price">Total Price :</h2>
-                <h3 id="price">$00</h3>
+                <h3 id="price"></h3>
             </div>
         </div>
+        <div id='complete-btn-div' class="hidden">
+            <button id="complete-btn" data-click='complete'>Complete Order </button>
+        </div>
+
+
+        <form id="payment-form" class="hidden">
+            <div id="payment-portal-div">
+
+                <h1> Enter Card Details</h1>
+                <input placeholder="Enter Your Name" type="text" id="name" name="name" required>
+                <input placeholder="Enter Your Card Number" type="number" id="card-number" name="card-number" required>
+                <input placeholder="Enter CVV" id="card-cvv" type="password" name="cvv" required>
+                <button id="pay-btn" data-pay='pay-btn'>PAY</button>
+
+            </div>
+        </form>
+
+        <div id="message-div" class="hidden"></div>
     </main>
 
 
